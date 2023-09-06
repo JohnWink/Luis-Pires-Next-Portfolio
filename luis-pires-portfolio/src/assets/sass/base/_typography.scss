@@ -1,0 +1,28 @@
+.heading-secondary{
+    text-transform: uppercase;
+    color: $color-secondary;
+}
+
+.heading-primary{
+    text-transform: uppercase;
+    color: $color-primary;
+}
+
+body{
+    font-family: Exo2;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: $color-primary;
+
+}
+
+/* Fonts */
+@font-face {
+    font-family: "Exo2";
+    src: local("Exo2"), url("../../fonts/Exo2-VariableFont_wght.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Exo2-italic";
+    src: local("Exo2-italic"), url("../../fonts/Exo2-Italic-VariableFont_wght.ttf") format("truetype");
+  }

@@ -1,0 +1,12 @@
+.row{
+    display:flex;
+    flex-flow: row;
+}
+
+.col{
+    display:flex;
+    flex-flow: column;
+    &.justify-content--center{
+        justify-content: center;
+    }
+}
