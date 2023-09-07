@@ -1,0 +1,12 @@
+@import "../../assets/sass/main.scss";
+.sideBarFooter{
+    display: flex;
+    flex-flow: row;
+   justify-content: space-around;
+   align-items: center;
+    padding-top: 1rem;
+    border-top: solid $color-secondary;
+    .image{
+        cursor: pointer;
+    }
+}

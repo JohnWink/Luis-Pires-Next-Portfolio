@@ -1,0 +1,17 @@
+*:focus {
+    outline: none;
+    }
+
+main{
+    display: flex;
+    flex-flow: column;
+    flex-grow: 100;
+    overflow: auto;
+}
+
+.wrapper-row{
+    display:flex;
+    flex-flow: row;
+    height: 100%;
+    width: 100%;
+}
