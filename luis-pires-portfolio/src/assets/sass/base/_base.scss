@@ -1,15 +1,15 @@
-*, 
-*::after, 
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
-
-body{
-    overflow: hidden;
-    box-sizing: border-box;
-    height: 100vh;
+main {
+  background-color: $color-terciary;
 }
-
-
+body {
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 100vh;
+}

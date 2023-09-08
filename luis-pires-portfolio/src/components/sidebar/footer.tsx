@@ -1,14 +1,10 @@
-import "./footer.scss";
-import LinkedinIcon from "@images/linkedinIcon.svg";
-import EmailIcon from "@images/emailIcon.svg";
+import LinkedinIcon from "@images/icons/linkedinIcon.svg";
+import EmailIcon from "@images/icons/emailIcon.svg";
 import Image from "next/image";
 export default function SidebarFooter() {
   return (
-    <div className="sideBarFooter">
-      <a
-        className="image"
-        href="mailto:luisbpires@hotmail.com"
-      >
+    <div className="sidebar-footer">
+      <a className="image" href="mailto:luisbpires@hotmail.com">
         <Image
           width={35}
           height={35}

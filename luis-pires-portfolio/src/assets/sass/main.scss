@@ -1,4 +1,3 @@
-
 //Abstract
 @import "abstract/variables";
 
@@ -7,4 +6,9 @@
 @import "base/typography";
 
 //Layout
-@import "layout/grid"
+@import "layout/grid";
+
+//Pages
+@import "pages/home";
+//Components
+@import "components/sidebar";

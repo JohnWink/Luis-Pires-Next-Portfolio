@@ -20,14 +20,14 @@
     ],
     "paths": {
       "@app/*": ["./src/app/*"],
-      "@about/*": ["./src/app/about/*"],
+      "@about/*": ["src/app/home/*"],
       "@contact/*": ["./src/app/contact/*"],
       "@my-skills/*": ["./src/app/my-skills/*"],
       "@work/*": ["./src/app/work/*"],
       "@sass/*": ["./src/assets/sass/*"],
       "@images/*": ["./src/assets/images/*"],
       "@fonts/*": ["./src/assets/fonts/*"],
-      "@components/*": ["./src/components/*"],
+      "@components/*": ["./src/components/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
