@@ -1,3 +1,14 @@
+@keyframes moveShadow {
+  0% {
+    box-shadow: 0px 0px 0 0 red;
+  }
+  50% {
+    box-shadow: 0px 0px 10px 10px blue;
+  }
+  100% {
+    box-shadow: 0px 0px 10px 10px red;
+  }
+}
 .home {
   width: 100%;
   height: 100%;
@@ -6,10 +17,43 @@
   align-items: center;
   justify-content: center;
   &-about {
-    max-width: 800rem;
+    // width: 100%;
+    max-width: 35em;
     display: flex;
     flex-flow: row;
     align-content: center;
     justify-content: space-between;
+    &--icon {
+      border-radius: 50%;
+      border: solid $color-quaternary 4px;
+      min-width: 7rem;
+      width: 100%;
+      height: 100%;
+    }
+    &--info {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-around;
+      //   button {
+      //     width: 10rem;
+      //     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+      //     border: solid $color-quaternary 2px;
+      //     background: none;
+      //     transition: all 0.2s ease;
+      //     &:hover {
+      //       background: $color-quaternary;
+      //       transition: all 0.2s ease-in;
+      //       animation: moveShadow 2s 0.2s ease infinite;
+      //       h3 {
+      //         color: $color-primary;
+      //       }
+      //     }
+      //     &:hover::before {
+      //       box-shadow: 0px 0px 10px 10px red;
+      //     }
+      //     &:hover::after {
+      //     }
+      //   }
+    }
   }
 }

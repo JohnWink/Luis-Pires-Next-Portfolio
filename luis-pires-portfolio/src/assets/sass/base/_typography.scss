@@ -18,7 +18,6 @@ h2 {
   font-family: Exo2;
   font-weight: 600;
   font-size: 1.5rem;
-  line-height: 1;
   color: $color-primary;
   &.heading-secondary {
     text-transform: uppercase;
@@ -30,7 +29,18 @@ h2 {
     color: $color-primary;
   }
 }
-h2 {
-  font-weight: 600;
-  font-size: 1.5rem;
+h3 {
+  font-family: Exo2;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: $color-primary;
+  &.secondary {
+    text-transform: uppercase;
+    color: $color-secondary;
+  }
+
+  &.primary {
+    text-transform: uppercase;
+    color: $color-primary;
+  }
 }

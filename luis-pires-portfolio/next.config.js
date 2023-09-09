@@ -3,18 +3,18 @@
 const path = require('path')
 const nextConfig = {
 
-    async redirects(){
-      return[
-        {
-        source:'/',
-        destination:'/about',
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/home',
         permanent: true,
       },
     ]
-    },
-    sassOptions: {
-        includePaths: [path.join(__dirname, 'styles')],
-      },
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+  },
 }
 
 module.exports = nextConfig
