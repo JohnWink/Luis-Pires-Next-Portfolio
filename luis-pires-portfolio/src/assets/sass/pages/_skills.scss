@@ -1,0 +1,62 @@
+.skills {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-basis: 10%;
+  &-body {
+    min-width: 20rem;
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    background-color: $color-primary;
+
+    border-radius: 10px;
+    width: 80%;
+    max-width: 40rem;
+    &--properties {
+      padding: 1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 10px;
+      background-color: $color-black--light;
+    }
+    &--title {
+      margin-bottom: 0.25rem;
+      &:not(:first-child) {
+        margin-top: 0.5rem;
+      }
+    }
+    &--subtitle {
+      margin-left: 20px;
+      margin-bottom: 0.25rem;
+      &:not(:first-child) {
+        margin-top: 0.25rem;
+      }
+    }
+    &--row {
+      width: calc(100% - 20px);
+      margin-left: 20px;
+      height: 1.5rem;
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        text-align: center;
+      }
+    }
+    &--progressBar {
+      margin-right: 1.5rem;
+      width: 100%;
+      max-width: 25rem;
+    }
+  }
+  .subSection {
+    z-index: 2;
+    margin-top: 0.25rem;
+    margin-left: 1rem;
+    border-left: solid 2px $color-quaternary;
+    width: 100%;
+  }
+}

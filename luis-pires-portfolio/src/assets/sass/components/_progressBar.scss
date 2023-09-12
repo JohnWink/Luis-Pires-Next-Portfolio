@@ -1,0 +1,23 @@
+.progressBar {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: $color-grey;
+  border-radius: 20px;
+  &-filler {
+    display: inline-block;
+    border-radius: 20px;
+    transition: width 1s ease;
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(
+      90deg,
+      $color-quaternary 0%,
+      $color-quintenary 50%,
+      $color-secondary 100%
+    );
+  }
+  span {
+    opacity: 0;
+  }
+}

@@ -5,7 +5,7 @@ export const navigationLinks = [
     },
     {
         name: 'Skills',
-        path: '/my-skills'
+        path: '/skills'
     },
     {
         name: 'Projects',

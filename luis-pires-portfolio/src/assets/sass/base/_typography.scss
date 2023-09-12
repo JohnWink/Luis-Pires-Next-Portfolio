@@ -14,14 +14,28 @@ p {
   font-size: 1rem;
   color: $color-grey;
 }
+h1 {
+  font-family: Exo2;
+  font-weight: 500;
+  font-size: 2rem;
+  b {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
 h2 {
   font-family: Exo2;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.5rem;
   color: $color-primary;
   &.heading-secondary {
     text-transform: uppercase;
     color: $color-secondary;
+  }
+
+  &.heading-quartenary {
+    text-transform: uppercase;
+    color: $color-quaternary;
   }
 
   &.heading-primary {
@@ -32,15 +46,18 @@ h2 {
 h3 {
   font-family: Exo2;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: $color-primary;
+  text-transform: uppercase;
   &.secondary {
-    text-transform: uppercase;
     color: $color-secondary;
   }
 
   &.primary {
-    text-transform: uppercase;
     color: $color-primary;
+  }
+
+  &.quartenary {
+    color: $color-quaternary;
   }
 }
