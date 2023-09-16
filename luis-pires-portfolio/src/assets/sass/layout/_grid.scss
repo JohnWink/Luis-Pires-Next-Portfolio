@@ -1,14 +1,12 @@
-.row{
-    display:flex;
-    flex-flow: row;
-    height: 100%;
-    width: 100%;
+.row {
+  display: flex;
+  flex-flow: row;
 }
 
-.col{
-    display:flex;
-    flex-flow: column;
-    &.justify-content--center{
-        justify-content: center;
-    }
+.col {
+  display: flex;
+  flex-flow: column;
+  &.center {
+    justify-content: center;
+  }
 }

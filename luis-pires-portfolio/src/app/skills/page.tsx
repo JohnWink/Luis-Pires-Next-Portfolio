@@ -7,14 +7,14 @@ export default function MySkills() {
         {properties.map((property) => {
           return (
             <>
-              <h3 className="skills-body--subtitle secondary">
+              <h3 className="skills-body--subtitle text-color--secondary">
                 {property.name}
               </h3>
               <div key={property.name} className="skills-body--row">
                 <div className="skills-body--progressBar">
                   <ProgressBar completed={property.value} />
                 </div>
-                <p className="secondary">{property.result}</p>
+                <p className="text-color--primary">{property.result}</p>
               </div>
               {property.extensions && (
                 <div className="subSection">
@@ -30,7 +30,9 @@ export default function MySkills() {
   const renderSkills = skills.map((skill) => {
     return (
       <>
-        <h3 className="skills-body--title quartenary">{skill.type}</h3>
+        <h3 className="skills-body--title text-color--quaternary">
+          {skill.type}
+        </h3>
         {renderProperties(skill.properties)}
       </>
     );

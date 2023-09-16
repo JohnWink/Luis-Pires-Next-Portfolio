@@ -1,0 +1,30 @@
+.workHistoryList {
+  .workHistory-component {
+    max-width: 40rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: $color-primary;
+    &-side {
+      &--front {
+        background-color: $color-primary--light;
+        padding: 1rem;
+        border-radius: 10px;
+        .info {
+          padding: 0.5rem;
+          &-body {
+            padding: 0.5rem;
+            &--item {
+              padding: 0.5rem;
+              text-align: center;
+              background-color: $color-primary;
+              border-radius: 10px;
+              &:not(:last-child) {
+                margin-bottom: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

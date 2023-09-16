@@ -20,7 +20,7 @@ export default function SidebarBody() {
           className={activePage === item.path ? "active" : ""}
           onClick={() => router.push(item.path)}
         >
-          <h2 className="heading-secondary">{item.name}</h2>
+          <h2 className="text-color--secondary">{item.name}</h2>
         </button>
       );
     });

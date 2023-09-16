@@ -9,6 +9,25 @@
   src: local("Exo2-italic"),
     url("../../fonts/Exo2-Italic-VariableFont_wght.ttf") format("truetype");
 }
+
+body {
+  font-family: Exo2;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.text-color {
+  &--primary {
+    color: $color-grey;
+  }
+  &--secondary {
+    color: $color-secondary;
+  }
+  &--quaternary {
+    color: $color-quaternary;
+  }
+}
+
 p {
   font-family: Exo2;
   font-size: 1rem;
@@ -28,36 +47,10 @@ h2 {
   font-weight: 500;
   font-size: 1.5rem;
   color: $color-primary;
-  &.heading-secondary {
-    text-transform: uppercase;
-    color: $color-secondary;
-  }
-
-  &.heading-quartenary {
-    text-transform: uppercase;
-    color: $color-quaternary;
-  }
-
-  &.heading-primary {
-    text-transform: uppercase;
-    color: $color-primary;
-  }
 }
 h3 {
   font-family: Exo2;
   font-weight: 500;
   font-size: 1rem;
   color: $color-primary;
-  text-transform: uppercase;
-  &.secondary {
-    color: $color-secondary;
-  }
-
-  &.primary {
-    color: $color-primary;
-  }
-
-  &.quartenary {
-    color: $color-quaternary;
-  }
 }

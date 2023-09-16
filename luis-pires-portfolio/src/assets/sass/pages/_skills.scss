@@ -1,16 +1,13 @@
 .skills {
-  display: flex;
-  flex-flow: row;
   align-items: center;
   justify-content: space-around;
-  flex-basis: 10%;
+  display: flex;
+  flex-flow: row;
   &-body {
     min-width: 20rem;
     display: block;
     padding: 1.5rem;
-    margin: 1rem;
     background-color: $color-primary;
-
     border-radius: 10px;
     width: 80%;
     max-width: 40rem;
