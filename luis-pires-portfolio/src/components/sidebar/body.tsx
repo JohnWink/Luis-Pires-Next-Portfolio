@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { navigationLinks } from "./constant";
 
 export default function SidebarBody() {
+  const example = "";
   const pathname = usePathname();
   const router = useRouter();
   const [activePage, setActivePage] = useState<string>(pathname);
