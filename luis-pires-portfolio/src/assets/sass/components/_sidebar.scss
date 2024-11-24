@@ -2,7 +2,7 @@
   height: 100vh;
   max-width: 20rem;
   padding: 1rem;
-  background-color: $color-primary;
+  background-color: $portfolio--color-primary;
   display: flex;
   flex-flow: column;
   &-header {
@@ -23,7 +23,7 @@
     button {
       padding: 1rem 0.5rem 1rem 0.5rem;
       width: 100%;
-      background-color: $color-primary;
+      background-color: $portfolio--color-primary;
       border: none;
       border-radius: 10px;
       transition: all 0.2s ease;
@@ -32,10 +32,10 @@
       }
       &:hover {
         transform: translateY(-0.2rem);
-        background-color: $color-quaternary;
+        background-color: $portfolio--color-quaternary;
         cursor: pointer;
         h2 {
-          color: $color-primary;
+          color: $portfolio--color-primary;
         }
       }
       &:active {
@@ -56,7 +56,7 @@
     justify-content: space-around;
     align-items: center;
     padding-top: 1rem;
-    border-top: solid $color-quaternary;
+    border-top: solid $portfolio--color-quaternary;
     .image {
       cursor: pointer;
     }

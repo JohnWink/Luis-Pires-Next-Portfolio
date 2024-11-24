@@ -7,7 +7,7 @@
     min-width: 20rem;
     display: block;
     padding: 1.5rem;
-    background-color: $color-primary;
+    background-color: $portfolio--color-primary;
     border-radius: 10px;
     width: 80%;
     max-width: 40rem;
@@ -53,7 +53,7 @@
     z-index: 2;
     margin-top: 0.25rem;
     margin-left: 1rem;
-    border-left: solid 2px $color-quaternary;
+    border-left: solid 2px $portfolio--color-quaternary;
     width: 100%;
   }
 }

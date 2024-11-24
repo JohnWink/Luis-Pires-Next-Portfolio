@@ -1,0 +1,30 @@
+.space-traders{
+    button {
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        width: 100%;
+        background-color: $portfolio--color-primary;
+        border: none;
+        border-radius: 10px;
+        transition: all 0.2s ease;
+        &:not(:last-child) {
+          margin-bottom: 0.2rem;
+        }
+        &:hover {
+          transform: translateY(-0.2rem);
+          background-color: $portfolio--color-quaternary;
+          cursor: pointer;
+          h2 {
+            color: $portfolio--color-primary;
+          }
+        }
+        &:active {
+          // box-shadow: 0 1rem 1rem rgba($color: $portfolio--color-primary, $alpha: 0.15);
+          transform: translateY(0);
+        }
+        &.active {
+          h2 {
+            color: $color-white;
+          }
+        }
+      }
+}
