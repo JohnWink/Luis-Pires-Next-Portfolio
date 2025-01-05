@@ -2,12 +2,12 @@
 @font-face {
   font-family: "Exo2";
   src: local("Exo2"),
-    url("../../fonts/Exo2-VariableFont_wght.ttf") format("truetype");
+    url("../../../fonts/Exo2-VariableFont_wght.ttf") format("truetype");
 }
 @font-face {
   font-family: "Exo2-italic";
   src: local("Exo2-italic"),
-    url("../../fonts/Exo2-Italic-VariableFont_wght.ttf") format("truetype");
+    url("../../../fonts/Exo2-Italic-VariableFont_wght.ttf") format("truetype");
 }
 
 body {
@@ -21,10 +21,10 @@ body {
     color: $color-grey;
   }
   &--secondary {
-    color: $portfolio--color-secondary;
+    color: $color-secondary;
   }
   &--quaternary {
-    color: $portfolio--color-quaternary;
+    color: $color-quaternary;
   }
 }
 
@@ -34,9 +34,10 @@ p {
   color: $color-grey;
 }
 h1 {
+  color: $color-secondary;
   font-family: Exo2;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 3rem;
   b {
     font-size: 2rem;
     font-weight: 700;
@@ -46,11 +47,11 @@ h2 {
   font-family: Exo2;
   font-weight: 500;
   font-size: 1.5rem;
-  color: $portfolio--color-primary;
+  color: $color-secondary;
 }
 h3 {
   font-family: Exo2;
   font-weight: 500;
   font-size: 1rem;
-  color: $portfolio--color-primary;
+  color: $color-primary;
 }

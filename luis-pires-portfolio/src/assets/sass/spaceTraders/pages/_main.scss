@@ -12,28 +12,66 @@
   }
 }
 
-.home {
+.main {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-
-  &-about {
+  &-login {
+    display: flex;
+    flex-flow: column;
+    padding: 3rem 2rem 3rem 2rem;
+    margin-top: 2rem;
+    position: relative;
     width: 100%;
     max-width: 35rem;
-    display: flex;
-    flex-flow: row;
-    // align-items: center;
+    min-height: 17rem;
+    box-shadow: 1rem 1rem $color-terciary;
+    background-color: $color-primary--lighter;
     justify-content: space-between;
+    // align-items: center;
 
-    &--icon {
-      border-radius: 50%;
-      // border: solid 2px $color-secondary;
-      box-shadow: 15px 10px $portfolio--color-secondary;
-      width: 8rem;
-      height: 8rem;
+    &--body {
+      display: flex;
+      flex-flow: column;
+      flex-grow: 11;
+      justify-content: center;
+      padding: 0rem 8rem 2rem 8rem;
+      input {
+        font-size: 14px;
+        border-radius: 6px;
+        line-height: 1.5;
+        padding: 5px 10px;
+        transition: box-shadow 100ms ease-in, border 100ms ease-in,
+          background-color 100ms ease-in;
+        border: 2px solid $color-quaternary;
+        color: $color-primary;
+        background: $color-quaternary;
+        display: block;
+        height: 36px;
+        &:hover {
+          border-color: #ccc;
+        }
+        &:focus {
+          border-color: $color-secondary;
+          background: #fff;
+        }
+      }
+
+      input:not(:first-child) {
+        margin-top: 2rem;
+      }
+    }
+
+    &--footer {
+      width: 100%;
+      flex-grow: 1;
+      padding: 1rem 2rem 1rem 2rem;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
     }
 
     &--info {
@@ -76,9 +114,9 @@
         content: "";
         background: linear-gradient(
           45deg,
-          $portfolio--color-secondary,
-          $portfolio--color-quaternary,
-          $portfolio--color-secondary
+          $color-secondary,
+          $color-quaternary,
+          $color-secondary
         );
         position: absolute;
         top: -5px;
@@ -124,8 +162,8 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        border: solid $portfolio--color-quaternary 2px;
-        background: $portfolio--color-terciary;
+        border: solid $color-quaternary 2px;
+        background: $color-terciary;
         left: 0;
         top: 0;
         border-radius: 10px;

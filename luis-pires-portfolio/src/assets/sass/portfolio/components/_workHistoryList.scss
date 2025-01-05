@@ -1,0 +1,102 @@
+.workHistoryList {
+  width: 100%;
+  &-body {
+    position: relative;
+    width: 100%;
+  }
+  .workHistory-component {
+    width: 25rem;
+    height: 27rem;
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+
+    &-side {
+      perspective: 150rem;
+      -moz-perspective: 150rem;
+      transition: all 0.5s;
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      .flip-button {
+        position: absolute;
+        bottom: 0;
+        align-self: center;
+        margin-bottom: 1rem;
+      }
+      &.front {
+        width: 100%;
+        transform: rotateY(0deg);
+        &.flipped {
+          transform: rotateY(-180deg);
+        }
+        //   transform: rotateY(-180deg);
+        background-color: $portfolio--color-primary--light;
+        padding: 1rem;
+        border-radius: 10px;
+        .info {
+          padding: 0.5rem;
+          &-body {
+            padding: 0.5rem;
+            &--item {
+              padding: 0.5rem;
+              text-align: center;
+              background-color: $portfolio--color-primary;
+              border-radius: 10px;
+              &:not(:last-child) {
+                margin-bottom: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+      &.back {
+        transform: rotateY(-180deg);
+        background-color: red;
+        padding: 1rem;
+        border-radius: 10px;
+        width: 100%;
+        //   transform: rotateY(-180deg);
+        background-color: $portfolio--color-primary--light;
+        padding: 1rem;
+        border-radius: 10px;
+        .info {
+          padding: 0.5rem;
+          &-body {
+            padding: 0.5rem;
+            &--item {
+              padding: 0.5rem;
+              text-align: center;
+              background-color: $portfolio--color-primary;
+              border-radius: 10px;
+              &:not(:last-child) {
+                margin-bottom: 0.5rem;
+              }
+            }
+          }
+        }
+        &.flipped {
+          transform: rotateY(0deg);
+        }
+      }
+    }
+
+    .skill-list {
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+
+      &--item {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border-radius: 4px;
+        margin: 0.25rem;
+
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+}

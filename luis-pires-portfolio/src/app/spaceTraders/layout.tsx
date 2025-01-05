@@ -1,4 +1,4 @@
-import "@sass/portfolio/main.scss";
+import "@sass/spaceTraders/main.scss";
 import type { Metadata } from "next";
 import Head from "next/head";
 import Sidebar from "@components/sidebar";
@@ -18,10 +18,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
-        <div className="wrapper-row">
-          <Sidebar />
-          <main>{children}</main>
-        </div>
+        <main>{children}</main>
       </body>
     </html>
   );

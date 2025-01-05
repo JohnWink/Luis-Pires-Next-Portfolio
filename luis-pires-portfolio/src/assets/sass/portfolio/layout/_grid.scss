@@ -1,0 +1,15 @@
+.row {
+  display: flex;
+  flex-flow: row;
+  &.space-around {
+    justify-content: space-around;
+  }
+}
+
+.col {
+  display: flex;
+  flex-flow: column;
+  &.center {
+    justify-content: center;
+  }
+}

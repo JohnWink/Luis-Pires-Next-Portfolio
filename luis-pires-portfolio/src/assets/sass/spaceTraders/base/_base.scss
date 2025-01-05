@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-size: 16px;
+}
+main {
+  background-color: $color-primary;
+}
+body {
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+*:focus {
+  outline: none;
+}
+
+main {
+  padding: 1rem;
+  display: flex;
+  flex-flow: column;
+  flex-grow: 100;
+  overflow: auto;
+}
+
+.wrapper-row {
+  display: flex;
+  flex-flow: row;
+  height: 100%;
+  width: 100%;
+}

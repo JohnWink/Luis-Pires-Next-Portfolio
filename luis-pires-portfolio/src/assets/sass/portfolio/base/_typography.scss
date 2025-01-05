@@ -1,0 +1,56 @@
+/* Fonts */
+@font-face {
+  font-family: "Exo2";
+  src: local("Exo2"),
+    url("../../../fonts/Exo2-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo2-italic";
+  src: local("Exo2-italic"),
+    url("../../../fonts/Exo2-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  font-family: Exo2;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.text-color {
+  &--primary {
+    color: $color-grey;
+  }
+  &--secondary {
+    color: $portfolio--color-secondary;
+  }
+  &--quaternary {
+    color: $portfolio--color-quaternary;
+  }
+}
+
+p {
+  font-family: Exo2;
+  font-size: 1rem;
+  color: $color-grey;
+}
+h1 {
+  font-family: Exo2;
+  font-weight: 500;
+  font-size: 2rem;
+  b {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+h2 {
+  font-family: Exo2;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: $portfolio--color-primary;
+}
+h3 {
+  font-family: Exo2;
+  font-weight: 500;
+  font-size: 1rem;
+  color: $portfolio--color-primary;
+}
