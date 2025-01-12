@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { IWorkHistoryProperty } from "./constants";
-
+import LinkedinIcon from "@images/icons/linkedinIcon.svg";
+import EmailIcon from "@images/icons/emailIcon.svg";
+import WebsiteIcon from "@images/icons/websiteIcon.svg";
+import Image from "next/image";
 export default function RenderWorkHistory(props: IWorkHistoryProperty) {
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -74,7 +77,7 @@ export default function RenderWorkHistory(props: IWorkHistoryProperty) {
         </div>
         <button
           onClick={() => setIsFlipped(!isFlipped)}
-          className="flip-button button"
+          className="flip-button button-secondary--medium "
         >
           <span>Flip to Details</span>
         </button>
@@ -85,12 +88,32 @@ export default function RenderWorkHistory(props: IWorkHistoryProperty) {
           isFlipped ? "flipped" : ""
         } col`}
       >
-        <div className="info row">
+        <h3 className="text-color--secondary">Description:</h3>
+        <div className="info-body--item">
           <p>{props.description}</p>
+        </div>
+        <div className="info footer">
+          <a className="image" target="_blank" href={props.company.websiteUrl}>
+            <Image
+              width={35}
+              height={35}
+              className="image"
+              src={WebsiteIcon}
+              alt="EmailIcon"
+            />
+          </a>
+          <a className="image" target="_blank" href={props.company.linkedinUrl}>
+            <Image
+              width={24}
+              height={24}
+              src={LinkedinIcon}
+              alt="LinkedinIcon"
+            />
+          </a>
         </div>
         <button
           onClick={() => setIsFlipped(!isFlipped)}
-          className="flip-button button"
+          className="flip-button  button-secondary--medium "
         >
           <span>Go Back</span>
         </button>

@@ -67,14 +67,26 @@
           &-body {
             padding: 0.5rem;
             &--item {
+              margin-top: 0.5rem;
               padding: 0.5rem;
-              text-align: center;
               background-color: $portfolio--color-primary;
               border-radius: 10px;
-              &:not(:last-child) {
-                margin-bottom: 0.5rem;
-              }
             }
+          }
+        }
+        .footer {
+          position: absolute;
+          bottom: 3.25rem;
+          align-self: center;
+          width: 80%;
+          display: flex;
+          flex-flow: row;
+          justify-content: space-around;
+          align-items: center;
+          padding-top: 1rem;
+          border-top: solid $portfolio--color-quaternary;
+          .image {
+            cursor: pointer;
           }
         }
         &.flipped {
@@ -94,7 +106,7 @@
         margin: 0.25rem;
 
         p {
-          color: white;
+          color: $color-black;
         }
       }
     }

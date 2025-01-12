@@ -1,15 +1,15 @@
 const skillList = {
   html: {
     name: "HTML",
-    color: "green",
+    color: "#b8fe92",
   },
   sass: {
     name: "Sass",
-    color: "blue",
+    color: "#87c7f0",
   },
   js: {
     name: "Javascript",
-    color: "red",
+    color: "#f389b2",
   },
 };
 interface ISkillProperties {

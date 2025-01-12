@@ -28,3 +28,34 @@
     }
   }
 }
+
+.button-secondary--medium {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: $portfolio--color-quaternary;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  span {
+    color: $portfolio--color-primary;
+  }
+  &:not(:last-child) {
+    margin-bottom: 0.2rem;
+  }
+  &:hover {
+    transform: translateY(-0.2rem);
+    background-color: $portfolio--color-primary;
+    cursor: pointer;
+    span {
+      color: $portfolio--color-secondary;
+    }
+  }
+  &:active {
+    // box-shadow: 0 1rem 1rem rgba($color: $portfolio--color-primary, $alpha: 0.15);
+    transform: translateY(0);
+  }
+  &.active {
+    h2 {
+      color: $color-white;
+    }
+  }
+}
